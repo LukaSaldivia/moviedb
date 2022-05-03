@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMovieDB</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+</head>
+<body>
+   
+    <img id="logo" class="logo" src="logo.svg" > 
+    
+
+    <div class="searchbar">
+        <div class="filters">
+            <input id="query" placeholder="Nombre o descripción" class="query"></input>
+        </div>
+        <button id="search" class="search">L</button>
+    </div>
+ 
+
+<!-- seguramente sea mejor ponerle div padre a los botones para después agregar los géneros -->
+<!-- agregar "fondo" debajo del searchbar -->
+<div id="bar" class="background">
+    <div id="rating-option" class="rating-option ">
+        <h1>Géneros</h1>
+      <button id="boton" class="botonGenre boton ">Acción</button>
+      <button id="boton" class="botonGenre boton ">Aventura</button>
+      <button id="boton" class="botonGenre boton ">Animación</button>
+      <button id="boton" class="botonGenre boton ">Comedia</button>
+      <button id="boton" class="botonGenre boton ">Crimen</button>
+      <button id="boton" class="botonGenre boton ">Documental</button>
+      <button id="boton" class="botonGenre boton ">Drama</button>
+      <button id="boton" class="botonGenre boton ">Familiar</button>
+      <button id="boton" class="botonGenre boton ">Fantasía</button>
+      <button id="boton" class="botonGenre boton ">Historia</button>
+      <button id="boton" class="botonGenre boton ">Horror</button>
+      <button id="boton" class="botonGenre boton ">Musical</button>
+      <button id="boton" class="botonGenre boton ">Misterio</button>
+      <button id="boton" class="botonGenre boton ">Romance</button>
+      <button id="boton" class="botonGenre boton ">Ciencia Ficción</button>
+      <button id="boton" class="botonGenre boton ">Thriller</button>
+      <button id="boton" class="botonGenre boton ">Guerra</button>
+      <button id="boton" class="botonGenre boton ">Western</button>
+  
+  
+ 
+          <h1>Valoración</h1>
+        <button id="boton1" class="boton ">Mejor valoradas</button>
+        <button id="boton2" class="boton ">Peor valoradas</button>
+       
+    </div>
+    <div id="movies-list-home"></div>
+</div> 
+
+
+<div class="movies void" id="movies">
+        <div class="movies-list" id="movies-list"></div>
+    </div>
+
+    <!-- <div class="pages-container void">
+        <button class="page">Anterior</button>
+        <div class="page-number">1</div>
+        <button class="page">Siguiente</button>
+        </div>  
+     -->
+
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
